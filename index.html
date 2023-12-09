@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            content: "";
+        }
+
+        .wrap {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            height: 600px;
+            overflow: hidden;
+            border-radius: 40px;
+        }
+
+        .div1 {
+            height: 600px;
+            transition: 0.7s ease;
+            background-image: url("./1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .div2 {
+            height: 600px;
+            transition: 1s linear;
+            background-image: url("./2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .div3 {
+            transition: 1s linear;
+            height: 600px;
+            background-image: url("./3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .w-80 {
+            width: 80%;
+            animation: opacity 3s infinite linear;
+        }
+
+        .w-10 {
+            width: 40%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="div1 an"></div>
+        <div class="div2 an"></div>
+        <div class="div3 an"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
